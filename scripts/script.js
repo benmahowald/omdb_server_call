@@ -31,8 +31,8 @@ var displayMovies = function (data) {
   $('#results').empty();
 
   for (var i = 0; i < data.Search.length; i++) {
-  results += '<h2>' + data.Search[i].Title + '</h1><p><img src="' + data.Search[i].Poster
-  + '"></p><p>' + data.Search[i].Year + '</p>';
+  results += '<h2>' + data.Search[i].Title + '</h1><p>' + data.Search[i].Year + '</p><p><img src="' + data.Search[i].Poster
+  + '"></p>';
   }
 $('#results').html(results);
 };//end displayMovies
